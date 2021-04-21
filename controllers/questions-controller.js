@@ -1,6 +1,5 @@
 const QuestionsService = require("../services/questions-service");
 
-//Class
 class QuestionController {
   async addQuestion(req, res) {
     try {
