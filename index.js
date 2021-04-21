@@ -30,7 +30,8 @@ require("dotenv").config({ path: path.resolve(__dirname, "./.env") });
 
 connectDatabase();
 
-const PORT = 9090;
+//const PORT = 9090;
+const PORT = process.env.PORT || 9090;
 
 app.listen(PORT, function () {
   console.log("server is started");
